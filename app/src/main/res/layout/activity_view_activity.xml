@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/view"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="2dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:text="nome              autore                isbn"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="7dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffad36" />
+
+        <GridView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gvproduct"
+            android:numColumns="3"
+
+            />
+    </LinearLayout>
+</LinearLayout>
