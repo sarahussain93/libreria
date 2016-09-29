@@ -45,7 +45,7 @@ public class admin_login extends AppCompatActivity {
 
                 password.getText().toString().equals("admin")) {
 
-            Toast.makeText(getApplicationContext(), "Hello admin!",
+            Toast.makeText(getApplicationContext(), "Ciao amministratore!",
 
                     Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(admin_login.this,admin_activity.class);
@@ -54,7 +54,7 @@ public class admin_login extends AppCompatActivity {
 
         } else {
 
-            Toast.makeText(getApplicationContext(), "Seems like you 're not admin!",
+            Toast.makeText(getApplicationContext(), "Sembra che tu non sia l'amministratore!",
 
                     Toast.LENGTH_SHORT).show();
 
