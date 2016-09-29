@@ -41,11 +41,11 @@ public class librarian_activity extends AppCompatActivity {
 
     public void authenticateLogin(View view) {
 
-        if (username.getText().toString().equals("admin") &&
+        if (username.getText().toString().equals("librarian") &&
 
-                password.getText().toString().equals("admin")) {
+                password.getText().toString().equals("librarian")) {
 
-            Toast.makeText(getApplicationContext(), "Hello admin!",
+            Toast.makeText(getApplicationContext(), "Ciao bibliotecario!",
 
                     Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(librarian_activity.this,activity_librarian.class);
@@ -54,7 +54,7 @@ public class librarian_activity extends AppCompatActivity {
 
         } else {
 
-            Toast.makeText(getApplicationContext(), "Seems like you 're not admin!",
+            Toast.makeText(getApplicationContext(), "Sembra che tu non sia il bibliotecario!",
 
                     Toast.LENGTH_SHORT).show();
 
