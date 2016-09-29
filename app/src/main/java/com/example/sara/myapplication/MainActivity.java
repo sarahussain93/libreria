@@ -28,7 +28,16 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
-            }
+
+    b2.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent admin = new Intent(MainActivity.this, librarian_activity.class);
+            startActivity(admin);
+        }
+    });
+
+}
 
 
     }
