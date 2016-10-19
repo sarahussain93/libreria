@@ -16,26 +16,28 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        b1 = (Button) findViewById(R.id.Button1);
-        b2 = (Button) findViewById(R.id.Button2);
+        b1 = (Button) findViewById(R.id.admin);
+        b2 = (Button) findViewById(R.id.utenti);
 
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent admin = new Intent(MainActivity.this, admin_login.class);
+                Intent admin = new Intent(MainActivity.this, admin_activity.class);
                 startActivity(admin);
             }
         });
 
 
-    b2.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent admin = new Intent(MainActivity.this, librarian_activity.class);
-            startActivity(admin);
-        }
-    });
+
+
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent admin = new Intent(MainActivity.this, utenti_activity.class);
+                startActivity(admin);
+            }
+        });
 
 }
 
